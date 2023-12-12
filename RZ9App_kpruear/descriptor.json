@@ -1,0 +1,22 @@
+﻿{
+  "Descriptor": {
+    "UId": "a3597731-4a1f-4138-8528-58a525920f05",
+    "Name": "RZ9App_kpruear",
+    "Type": 1,
+    "Maintainer": "Customer",
+    "ProjectPath": "Files/RZ9App_kpruear.csproj",
+    "DependsOn": [
+      {
+        "UId": "2ecba2bd-b810-47a5-a1b1-08c888529d6c",
+        "PackageVersion": "7.8.0",
+        "Name": "CrtCustomer360App",
+        "Type": 1
+      },
+      {
+        "UId": "e1a42600-67a3-4627-b15a-874547cc3d3a",
+        "Name": "RZ9Request",
+        "Type": 1
+      }
+    ]
+  }
+}

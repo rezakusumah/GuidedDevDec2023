@@ -1,0 +1,14 @@
+﻿{
+  "Descriptor": {
+    "UId": "e547b4b9-b90d-47b3-a337-0e7940081484",
+    "Name": "RZ9Request_FormPage",
+    "ModifiedOnUtc": "\/Date(1702356614000)\/",
+    "Parent": {
+      "UId": "3b2e117f-8c6b-4ca5-80a2-7ebb497cddf9",
+      "Name": "PageWithTabsFreedomTemplate"
+    },
+    "ManagerName": "ClientUnitSchemaManager",
+    "Caption": "Request form page",
+    "DependsOn": []
+  }
+}

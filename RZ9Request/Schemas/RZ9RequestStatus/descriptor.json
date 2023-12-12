@@ -1,0 +1,14 @@
+﻿{
+  "Descriptor": {
+    "UId": "aa6ec0cc-6b6f-4bf1-9495-e55362e28890",
+    "Name": "RZ9RequestStatus",
+    "ModifiedOnUtc": "\/Date(1701934775000)\/",
+    "Parent": {
+      "UId": "11ab4bcb-9b23-4b6d-9c86-520fae925d75",
+      "Name": "BaseLookup"
+    },
+    "ManagerName": "EntitySchemaManager",
+    "Caption": "Request Status",
+    "DependsOn": []
+  }
+}

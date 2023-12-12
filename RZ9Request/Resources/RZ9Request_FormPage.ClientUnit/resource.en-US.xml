@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="en-US">
+	<Group Type="String">
+		<Items>
+			<Item Name="Caption" Value="Request form page" />
+			<Item Name="LocalizableStrings.addRecord_3zk5gz2_caption.Value" Value="Add new" />
+			<Item Name="LocalizableStrings.addRecord_6b7xudz_caption.Value" Value="Add new" />
+			<Item Name="LocalizableStrings.addRecord_inp5zg4_caption.Value" Value="Add new" />
+			<Item Name="LocalizableStrings.addRecord_wf8kiy4_caption.Value" Value="Add new" />
+			<Item Name="LocalizableStrings.addRecord_xrrd566_caption.Value" Value="Add new" />
+			<Item Name="LocalizableStrings.Button_xhc34fr_caption.Value" Value="Refresh" />
+			<Item Name="LocalizableStrings.EmailInput_sy0xhxu_caption.Value" Value="Email address" />
+			<Item Name="LocalizableStrings.EmailInput_sy0xhxu_label.Value" Value="Email address" />
+			<Item Name="LocalizableStrings.ExpansionPanel_rjgh49n_title.Value" Value="Request Expenses" />
+			<Item Name="LocalizableStrings.GridDetailAddBtn_02i2m4e_caption.Value" Value="New" />
+			<Item Name="LocalizableStrings.GridDetailExportDataBtn_p80p459_caption.Value" Value="Export to Excel" />
+			<Item Name="LocalizableStrings.GridDetailImportDataBtn_yne02uv_caption.Value" Value="Data import" />
+			<Item Name="LocalizableStrings.GridDetailRefreshBtn_9x2hlxn_caption.Value" Value="Refresh" />
+			<Item Name="LocalizableStrings.GridDetailSearchFilter_rkz8hkn_placeholder.Value" Value="Search" />
+			<Item Name="LocalizableStrings.GridDetailSettingsBtn_8txi48f_caption.Value" Value="Actions" />
+			<Item Name="LocalizableStrings.Label_kuk8ju3_caption.Value" Value="Applicant Info" />
+			<Item Name="LocalizableStrings.Label_y8vv7r1_caption.Value" Value="Label 2" />
+			<Item Name="LocalizableStrings.RichTextEditor_l49b81h_placeholder.Value" Value="please enter your request description here" />
+			<Item Name="LocalizableStrings.RichTextEditor_l49b81h_tooltip.Value" Value="Use this field for description" />
+			<Item Name="LocalizableStrings.TabContainer_0teyep3_caption.Value" Value="More Information" />
+			<Item Name="LocalizableStrings.TabContainer_70tsenb_caption.Value" Value="Tab 2" />
+			<Item Name="LocalizableStrings.TabContainer_acn9u7i_caption.Value" Value="Expenses" />
+		</Items>
+	</Group>
+</Resources>

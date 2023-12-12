@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="en-US">
+	<Group Type="String">
+		<Items>
+			<Item Name="Caption" Value="Request Expenses" />
+			<Item Name="Columns.RZ9Amount.Caption" Value="Amount" />
+			<Item Name="Columns.RZ9Comment.Caption" Value="Comment" />
+			<Item Name="Columns.RZ9Imported.Caption" Value="Imported" />
+			<Item Name="Columns.RZ9Request.Caption" Value="Request" />
+			<Item Name="Columns.RZ9Type.Caption" Value="Type" />
+		</Items>
+	</Group>
+</Resources>

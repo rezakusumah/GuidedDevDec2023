@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="en-US">
+	<Group Type="String">
+		<Items>
+			<Item Name="Caption" Value="Request" />
+			<Item Name="Columns.RZ9Applicant.Caption" Value="Applicant" />
+			<Item Name="Columns.RZ9Category.Caption" Value="Category" />
+			<Item Name="Columns.RZ9Description.Caption" Value="Description" />
+			<Item Name="Columns.RZ9ExpensesTotal.Caption" Value="Expenses (total)" />
+			<Item Name="Columns.RZ9Name.Caption" Value="Number" />
+			<Item Name="Columns.RZ9Owner.Caption" Value="Owner" />
+			<Item Name="Columns.RZ9Status.Caption" Value="Status" />
+			<Item Name="Columns.RZ9Subcategory.Caption" Value="Subcategory" />
+		</Items>
+	</Group>
+</Resources>

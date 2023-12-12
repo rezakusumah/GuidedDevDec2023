@@ -1,0 +1,19 @@
+<Project>
+	<ItemGroup Condition="'$(PkgPath)' != ''">
+		<Compile Remove="$(PkgPath)/RZ9Request/Assemblies/**" />
+		<Compile Remove="$(PkgPath)/RZ9Request/Data/**" />
+		<Compile Remove="$(PkgPath)/RZ9Request/SqlScripts/**" />
+		<Compile Remove="$(PkgPath)/RZ9Request/Schemas\**" />
+		<Compile Remove="$(PkgPath)/RZ9Request/Resources/**" />
+		<EmbeddedResource Remove="$(PkgPath)/RZ9Request/Assemblies/**" />
+		<EmbeddedResource Remove="$(PkgPath)/RZ9Request/Data/**" />
+		<EmbeddedResource Remove="$(PkgPath)/RZ9Request/SqlScripts/**" />
+		<EmbeddedResource Remove="$(PkgPath)/RZ9Request/Schemas/**" />
+		<EmbeddedResource Remove="$(PkgPath)/RZ9Request/Resources/**" />
+		<None Remove="$(PkgPath)/RZ9Request/Assemblies/**" />
+		<None Remove="$(PkgPath)/RZ9Request/Data/**" />
+		<None Remove="$(PkgPath)/RZ9Request/SqlScripts/**" />
+		<None Remove="$(PkgPath)/RZ9Request/Schemas/**" />
+		<None Remove="$(PkgPath)/RZ9Request/Resources/**" />
+  </ItemGroup>
+</Project>

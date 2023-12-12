@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "82d9d79d-19e8-4811-aced-25c4827e7b9e",
+    "Name": "RZ9RequestRelatedPage",
+    "ModifiedOnUtc": "\/Date(1702357845000)\/",
+    "ManagerName": "AddonSchemaManager",
+    "Caption": "Request (Page settings)",
+    "DependsOn": []
+  }
+}

@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "b9e99bb2-827c-46b0-8ad0-794776810170",
+    "Name": "RZ9RequestBusinessRule",
+    "ModifiedOnUtc": "\/Date(1702356611000)\/",
+    "ManagerName": "AddonSchemaManager",
+    "Caption": "Request (Business rules)",
+    "DependsOn": []
+  }
+}

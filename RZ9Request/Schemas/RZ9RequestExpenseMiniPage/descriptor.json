@@ -1,0 +1,14 @@
+﻿{
+  "Descriptor": {
+    "UId": "dcb691d5-6ad6-43b0-8093-d6bf96b3b752",
+    "Name": "RZ9RequestExpenseMiniPage",
+    "ModifiedOnUtc": "\/Date(1702008207000)\/",
+    "Parent": {
+      "UId": "ecdcc8ff-272c-4957-9381-7d74ce17e140",
+      "Name": "BaseMiniPageTemplate"
+    },
+    "ManagerName": "ClientUnitSchemaManager",
+    "Caption": "Request Expenses Mini Page",
+    "DependsOn": []
+  }
+}

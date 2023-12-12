@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "787d2d15-8606-42da-aad1-7be9bc75e79d",
+    "Name": "RZ9Request_FormPageBusinessRule",
+    "ModifiedOnUtc": "\/Date(1702086945000)\/",
+    "ManagerName": "AddonSchemaManager",
+    "Caption": "Request form page (Business rules)",
+    "DependsOn": []
+  }
+}

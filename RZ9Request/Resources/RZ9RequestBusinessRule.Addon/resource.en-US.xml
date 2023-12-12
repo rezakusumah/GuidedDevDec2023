@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="en-US">
+	<Group Type="String">
+		<Items>
+			<Item Name="AddonConfig.Rules.24170a24-4697-77c3-74de-b711e4b75f62.Caption" Value="ChildRule-99a3ae18-a4f9-fba7-c26f-f25366db1c2b-PopulateValue" />
+			<Item Name="AddonConfig.Rules.2aee09df-9dc6-a0c8-e429-69e4177ef7b4.Caption" Value="Make elements read-only: Applicant" />
+			<Item Name="AddonConfig.Rules.99a3ae18-a4f9-fba7-c26f-f25366db1c2b.Caption" Value="Apply filter: Subcategory" />
+			<Item Name="AddonConfig.Rules.ae32ac9a-1886-8bd1-1273-af404e92fc04.Caption" Value="Apply static filter: Owner" />
+			<Item Name="AddonConfig.Rules.c94c3eb8-f7c1-9a29-a42c-ef23455509d1.Caption" Value="ChildRule-99a3ae18-a4f9-fba7-c26f-f25366db1c2b-ClearValue" />
+			<Item Name="AddonConfig.Rules.f2fbb891-60d1-91db-f191-4e00bf3c6718.Caption" Value="Make elements required: Description" />
+			<Item Name="Caption" Value="Request (Business rules)" />
+		</Items>
+	</Group>
+</Resources>

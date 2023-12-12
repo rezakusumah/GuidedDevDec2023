@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "9a9ab420-17ff-4e4f-948f-e40765aef1a5",
+    "Name": "RZ9RequestExpensesRelatedPage",
+    "ModifiedOnUtc": "\/Date(1702008350000)\/",
+    "ManagerName": "AddonSchemaManager",
+    "Caption": "Request Expenses (Page settings)",
+    "DependsOn": []
+  }
+}
