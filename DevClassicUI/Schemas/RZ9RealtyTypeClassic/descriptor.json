@@ -1,0 +1,13 @@
+﻿{
+  "Descriptor": {
+    "UId": "99558c3f-e968-4a1d-8f9c-bd2a55de2f5e",
+    "Name": "RZ9RealtyTypeClassic",
+    "ModifiedOnUtc": "\/Date(1702379122000)\/",
+    "Parent": {
+      "UId": "11ab4bcb-9b23-4b6d-9c86-520fae925d75",
+      "Name": "BaseLookup"
+    },
+    "ManagerName": "EntitySchemaManager",
+    "Caption": "Realty Type (ClassicUI)"
+  }
+}
