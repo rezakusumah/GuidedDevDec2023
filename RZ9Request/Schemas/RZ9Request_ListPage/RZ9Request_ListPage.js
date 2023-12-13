@@ -22,33 +22,100 @@ define("RZ9Request_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCH
 				"operation": "merge",
 				"name": "DataTable",
 				"values": {
-					"layoutConfig": {
-						"basis": "100%",
-						"width": 300
-					},
 					"columns": [
 						{
 							"id": "f252f581-0ccf-44ac-b7c9-c00df2ad9919",
 							"code": "PDS_RZ9Name",
 							"caption": "#ResourceString(PDS_RZ9Name)#",
-							"dataValueType": 1
+							"dataValueType": 1,
+							"width": 181
 						},
 						{
-							"id": "c8689d78-80ba-4e71-8cf2-fa478e3be5bc",
-							"code": "PDS_CreatedOn",
-							"caption": "#ResourceString(PDS_CreatedOn)#",
-							"dataValueType": 7
+							"id": "3aeb28b9-d7ec-ebac-3a10-c894fd4239f9",
+							"code": "PDS_RZ9Status",
+							"path": "RZ9Status",
+							"caption": "#ResourceString(PDS_RZ9Status)#",
+							"dataValueType": 10,
+							"referenceSchemaName": "RZ9RequestStatus"
 						},
 						{
-							"id": "fd4b3485-a46e-4219-b775-adef1210fe51",
-							"code": "PDS_CreatedBy",
-							"caption": "#ResourceString(PDS_CreatedBy)#",
-							"dataValueType": 10
+							"id": "f71ebb9b-393b-38eb-2121-39cd252a11be",
+							"code": "PDS_RZ9Category",
+							"path": "RZ9Category",
+							"caption": "#ResourceString(PDS_RZ9Category)#",
+							"dataValueType": 10,
+							"referenceSchemaName": "RZ9RequestCategory",
+							"width": 179
 						},
+						{
+							"id": "65b5c7db-3069-2f35-c742-818ac0ada74c",
+							"code": "PDS_RZ9Subcategory",
+							"path": "RZ9Subcategory",
+							"caption": "#ResourceString(PDS_RZ9Subcategory)#",
+							"dataValueType": 10,
+							"referenceSchemaName": "RZ9RequestSubcategory"
+						},
+						{
+							"id": "d9252667-7405-a1cd-81be-d3b509dc8a1a",
+							"code": "PDS_RZ9Owner",
+							"path": "RZ9Owner",
+							"caption": "#ResourceString(PDS_RZ9Owner)#",
+							"dataValueType": 10,
+							"referenceSchemaName": "Contact",
+							"width": 169
+						},
+						{
+							"id": "d1596ea8-5ebc-c955-799b-3ecf18afd9d1",
+							"code": "PDS_RZ9Applicant",
+							"path": "RZ9Applicant",
+							"caption": "#ResourceString(PDS_RZ9Applicant)#",
+							"dataValueType": 10,
+							"referenceSchemaName": "Contact",
+							"width": 189
+						},
+						{
+							"id": "fc9df803-cba1-6e4b-4382-0ae3bfd1aeb7",
+							"code": "PDS_RZ9ApplicantType",
+							"path": "RZ9Applicant.Type",
+							"caption": "#ResourceString(PDS_RZ9ApplicantType)#",
+							"dataValueType": 10,
+							"referenceSchemaName": "ContactType",
+							"width": 136
+						},
+						{
+							"id": "b399961f-09b9-9620-02b3-691cc5f37c4e",
+							"code": "PDS_RZ9RequestExpensesRZ9RequestIdCount36665667",
+							"path": "[RZ9RequestExpenses:RZ9Request].Id",
+							"caption": "#ResourceString(PDS_RZ9RequestExpensesRZ9RequestIdCount36665667)#",
+							"dataValueType": 4,
+							"referenceSchemaName": "RZ9RequestExpenses",
+							"width": 146
+						},
+						{
+							"id": "43585014-971d-1105-36f4-dbeeae4f9edb",
+							"code": "PDS_RZ9RequestExpensesRZ9RequestRZ9AmountSume944f54f",
+							"path": "[RZ9RequestExpenses:RZ9Request].RZ9Amount",
+							"caption": "#ResourceString(PDS_RZ9RequestExpensesRZ9RequestRZ9AmountSume944f54f)#",
+							"dataValueType": 6,
+							"referenceSchemaName": "RZ9RequestExpenses",
+							"width": 149
+						}
 					],
+					"layoutConfig": {
+						"basis": "100%",
+						"width": 300
+					},
 					"primaryColumnName": "PDS_Id",
 					"sorting": "$ItemsSorting | crt.ToDataTableSortingConfig: 'Items'"
 				}
+			},
+			{
+				"operation": "remove",
+				"name": "DataTable",
+				"properties": [
+					"selectionState",
+					"_selectionOptions"
+				]
 			},
 			{
 				"operation": "insert",
@@ -242,18 +309,130 @@ define("RZ9Request_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCH
 					"layoutConfig": {
 						"width": 328.125
 					},
-					"classes": ["section-folder-tree"]
+					"classes": [
+						"section-folder-tree"
+					],
+					"_filterOptions": {
+						"expose": [
+							{
+								"attribute": "FolderTree_active_folder_filter",
+								"converters": [
+									{
+										"converter": "crt.FolderTreeActiveFilterAttributeConverter",
+										"args": []
+									}
+								]
+							}
+						],
+						"from": [
+							"FolderTree_items",
+							"FolderTree_favoriteItems",
+							"FolderTree_active_folder_id"
+						]
+					}
 				},
 				"parentName": "SectionContentWrapper",
 				"propertyName": "items",
 				"index": 0
 			}
 		]/**SCHEMA_VIEW_CONFIG_DIFF*/,
-		viewModelConfig: /**SCHEMA_VIEW_MODEL_CONFIG*/{
-			"attributes": {
-				"ItemsSorting": {},
-				"Items": {
-					"isCollection": true,
+		viewModelConfigDiff: /**SCHEMA_VIEW_MODEL_CONFIG_DIFF*/[
+			{
+				"operation": "merge",
+				"path": [
+					"attributes"
+				],
+				"values": {
+					"ItemsSorting": {},
+					"FolderTree_visible": {
+						"value": false
+					},
+					"FolderTree_items": {
+						"isCollection": true,
+						"viewModelConfig": {
+							"attributes": {
+								"Id": {
+									"modelConfig": {
+										"path": "FolderTree_items_DS.Id"
+									}
+								},
+								"Name": {
+									"modelConfig": {
+										"path": "FolderTree_items_DS.Name"
+									}
+								},
+								"ParentId": {
+									"modelConfig": {
+										"path": "FolderTree_items_DS.Parent.Id"
+									}
+								},
+								"FilterData": {
+									"modelConfig": {
+										"path": "FolderTree_items_DS.FilterData"
+									}
+								}
+							}
+						},
+						"modelConfig": {
+							"path": "FolderTree_items_DS",
+							"filterAttributes": [
+								{
+									"name": "FolderTree_items_DS_filter",
+									"loadOnChange": true
+								}
+							]
+						},
+						"embeddedModel": {
+							"config": {
+								"type": "crt.EntityDataSource",
+								"config": {
+									"entitySchemaName": "FolderTree"
+								}
+							},
+							"name": "FolderTree_items_DS"
+						}
+					},
+					"FolderTree_active_folder_id": {},
+					"FolderTree_active_folder_name": {},
+					"FolderTree_active_folder_filter": {
+						"value": {}
+					},
+					"FolderTree_items_DS_filter": {
+						"value": {
+							"isEnabled": true,
+							"trimDateTimeParameterToDate": false,
+							"filterType": 6,
+							"logicalOperation": 0,
+							"items": {
+								"3714ebf4-41a3-9a82-8e8b-039d9ac03ce1": {
+									"isEnabled": true,
+									"trimDateTimeParameterToDate": false,
+									"filterType": 1,
+									"comparisonType": 3,
+									"leftExpression": {
+										"expressionType": 0,
+										"columnPath": "EntitySchemaName"
+									},
+									"rightExpression": {
+										"expressionType": 2,
+										"parameter": {
+											"dataValueType": 1,
+											"value": "RZ9Request"
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			},
+			{
+				"operation": "merge",
+				"path": [
+					"attributes",
+					"Items"
+				],
+				"values": {
 					"modelConfig": {
 						"path": "PDS",
 						"pagingConfig": {
@@ -276,126 +455,129 @@ define("RZ9Request_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCH
 								"loadOnChange": true
 							}
 						]
+					}
+				}
+			},
+			{
+				"operation": "merge",
+				"path": [
+					"attributes",
+					"Items",
+					"viewModelConfig",
+					"attributes"
+				],
+				"values": {
+					"PDS_RZ9Name": {
+						"modelConfig": {
+							"path": "PDS.RZ9Name"
+						}
 					},
-					"viewModelConfig": {
-						"attributes": {
-							"PDS_Id": {
-								"modelConfig": {
-									"path": 'PDS.Id',
-								}
-							},
-							"PDS_RZ9Name": {
-								"modelConfig": {
-									"path": "PDS.RZ9Name"
-								}
-							},
-							"PDS_CreatedOn": {
-								"modelConfig": {
-									"path": "PDS.CreatedOn"
-								}
-							},
-							"PDS_CreatedBy": {
-								"modelConfig": {
-									"path": "PDS.CreatedBy"
-								}
-							}
+					"PDS_RZ9Status": {
+						"modelConfig": {
+							"path": "PDS.RZ9Status"
+						}
+					},
+					"PDS_RZ9Category": {
+						"modelConfig": {
+							"path": "PDS.RZ9Category"
+						}
+					},
+					"PDS_RZ9Subcategory": {
+						"modelConfig": {
+							"path": "PDS.RZ9Subcategory"
+						}
+					},
+					"PDS_RZ9Owner": {
+						"modelConfig": {
+							"path": "PDS.RZ9Owner"
+						}
+					},
+					"PDS_RZ9Applicant": {
+						"modelConfig": {
+							"path": "PDS.RZ9Applicant"
+						}
+					},
+					"PDS_RZ9ApplicantType": {
+						"modelConfig": {
+							"path": "PDS.RZ9ApplicantType"
+						}
+					},
+					"PDS_RZ9RequestExpensesRZ9RequestIdCount36665667": {
+						"modelConfig": {
+							"path": "PDS.RZ9RequestExpensesRZ9RequestIdCount36665667"
+						}
+					},
+					"PDS_RZ9RequestExpensesRZ9RequestRZ9AmountSume944f54f": {
+						"modelConfig": {
+							"path": "PDS.RZ9RequestExpensesRZ9RequestRZ9AmountSume944f54f"
+						}
+					},
+					"PDS_Id": {
+						"modelConfig": {
+							"path": "PDS.Id"
 						}
 					}
-				},
-				"FolderTree_visible": {
-					"value": false
-				},
-				"FolderTree_items": {
-					"isCollection": true,
-					"viewModelConfig": {
-						"attributes": {
-							"Id": {
-								"modelConfig": {
-									"path": "FolderTree_items_DS.Id"
-								}
-							},
-							"Name": {
-								"modelConfig": {
-									"path": "FolderTree_items_DS.Name"
-								}
-							},
-							"ParentId": {
-								"modelConfig": {
-									"path": "FolderTree_items_DS.Parent.Id"
-								}
-							},
-							"FilterData": {
-								"modelConfig": {
-									"path": "FolderTree_items_DS.FilterData"
-								}
-							}
-						}
-					},
-					"modelConfig": {
-						"path": "FolderTree_items_DS",
-						"filterAttributes": [
-							{
-								"name": "FolderTree_items_DS_filter",
-								"loadOnChange": true
-							}
-						]
-					},
-					"embeddedModel": {
-						"name": "FolderTree_items_DS",
-						"config": {
+				}
+			}
+		]/**SCHEMA_VIEW_MODEL_CONFIG_DIFF*/,
+		modelConfigDiff: /**SCHEMA_MODEL_CONFIG_DIFF*/[
+			{
+				"operation": "merge",
+				"path": [],
+				"values": {
+					"dataSources": {
+						"PDS": {
 							"type": "crt.EntityDataSource",
+							"hiddenInPageDesigner": true,
 							"config": {
-								"entitySchemaName": "FolderTree"
-							}
-						}
-					}
-				},
-				"FolderTree_active_folder_id": {},
-				"FolderTree_active_folder_name": {},
-				"FolderTree_active_folder_filter": {
-					"value": {}
-				},
-				"FolderTree_items_DS_filter": {
-					"value": {
-						"isEnabled": true,
-						"trimDateTimeParameterToDate": false,
-						"filterType": 6,
-						"logicalOperation": 0,
-						"items": {
-							"3714ebf4-41a3-9a82-8e8b-039d9ac03ce1": {
-								"isEnabled": true,
-								"trimDateTimeParameterToDate": false,
-								"filterType": 1,
-								"comparisonType": 3,
-								"leftExpression": {
-									"expressionType": 0,
-									"columnPath": "EntitySchemaName"
-								},
-								"rightExpression": {
-									"expressionType": 2,
-									"parameter": {
-										"dataValueType": 1,
-										"value": "RZ9Request"
+								"entitySchemaName": "RZ9Request",
+								"attributes": {
+									"RZ9Name": {
+										"path": "RZ9Name"
+									},
+									"RZ9Status": {
+										"path": "RZ9Status"
+									},
+									"RZ9Category": {
+										"path": "RZ9Category"
+									},
+									"RZ9Subcategory": {
+										"path": "RZ9Subcategory"
+									},
+									"RZ9Owner": {
+										"path": "RZ9Owner"
+									},
+									"RZ9Applicant": {
+										"path": "RZ9Applicant"
+									},
+									"RZ9ApplicantType": {
+										"type": "ForwardReference",
+										"path": "RZ9Applicant.Type"
+									},
+									"RZ9RequestExpensesRZ9RequestIdCount36665667": {
+										"type": "Aggregation",
+										"path": "[RZ9RequestExpenses:RZ9Request].Id",
+										"aggregationConfig": {
+											"aggregationFunction": "Count",
+											"filter": null
+										}
+									},
+									"RZ9RequestExpensesRZ9RequestRZ9AmountSume944f54f": {
+										"type": "Aggregation",
+										"path": "[RZ9RequestExpenses:RZ9Request].RZ9Amount",
+										"aggregationConfig": {
+											"aggregationFunction": "Sum",
+											"filter": null
+										}
 									}
 								}
-							}
+							},
+							"scope": "viewElement"
 						}
 					}
 				}
 			}
-		}/**SCHEMA_VIEW_MODEL_CONFIG*/,
-		modelConfig: /**SCHEMA_MODEL_CONFIG*/{
-			"dataSources": {
-				"PDS": {
-					"type": "crt.EntityDataSource",
-					"hiddenInPageDesigner": true,
-					"config": {
-						"entitySchemaName": "RZ9Request"
-					},
-					"scope": "viewElement"
-				}
-			}
-		}/**SCHEMA_MODEL_CONFIG*/,
+		]/**SCHEMA_MODEL_CONFIG_DIFF*/,
 		handlers: /**SCHEMA_HANDLERS*/[]/**SCHEMA_HANDLERS*/,
 		converters: /**SCHEMA_CONVERTERS*/{}/**SCHEMA_CONVERTERS*/,
 		validators: /**SCHEMA_VALIDATORS*/{}/**SCHEMA_VALIDATORS*/
