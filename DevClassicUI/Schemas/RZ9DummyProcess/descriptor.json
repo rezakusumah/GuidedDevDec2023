@@ -2,8 +2,9 @@
   "Descriptor": {
     "UId": "9e1bceb5-d00f-445e-a2d4-a49c6071684a",
     "Name": "RZ9DummyProcess",
-    "ModifiedOnUtc": "\/Date(1702377587000)\/",
+    "ModifiedOnUtc": "\/Date(1702377588000)\/",
     "ManagerName": "ProcessSchemaManager",
-    "Caption": "Dummy Process"
+    "Caption": "Dummy Process",
+    "DependsOn": []
   }
 }
