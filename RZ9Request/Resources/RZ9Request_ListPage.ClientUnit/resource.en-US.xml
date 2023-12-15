@@ -7,6 +7,13 @@
 			<Item Name="LocalizableStrings.LookupQuickFilterByTag_config_hint.Value" Value="Select tag to filter" />
 			<Item Name="LocalizableStrings.PDS_RZ9RequestExpensesRZ9RequestIdCount36665667.Value" Value="Number of expenses" />
 			<Item Name="LocalizableStrings.PDS_RZ9RequestExpensesRZ9RequestRZ9AmountSume944f54f.Value" Value="Expenses, total" />
+			<Item Name="LocalizableStrings.QuickFilter_12gphvv_caption.Value" Value="Quick filter" />
+			<Item Name="LocalizableStrings.QuickFilter_12gphvv_config_caption.Value" Value="Created on" />
+			<Item Name="LocalizableStrings.QuickFilter_8kz64mh_caption.Value" Value="Quick filter" />
+			<Item Name="LocalizableStrings.QuickFilter_8kz64mh_config_caption.Value" Value="Applicant" />
+			<Item Name="LocalizableStrings.QuickFilter_8kz64mh_config_hint.Value" Value="hint" />
+			<Item Name="LocalizableStrings.QuickFilter_w5qel1p_caption.Value" Value="Quick filter" />
+			<Item Name="LocalizableStrings.QuickFilter_w5qel1p_config_caption.Value" Value="Unresolved" />
 			<Item Name="LocalizableStrings.RefreshButtonCaption.Value" Value="Refresh" />
 			<Item Name="LocalizableStrings.SearchFilter_placeholder.Value" Value="Search" />
 		</Items>

@@ -231,6 +231,186 @@ define("RZ9Request_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCH
 			},
 			{
 				"operation": "insert",
+				"name": "QuickFilter_8kz64mh",
+				"values": {
+					"type": "crt.QuickFilter",
+					"config": {
+						"caption": "#ResourceString(QuickFilter_8kz64mh_config_caption)#",
+						"hint": "#ResourceString(QuickFilter_8kz64mh_config_hint)#",
+						"icon": "person-button-icon",
+						"iconPosition": "left-icon",
+						"defaultValue": [
+							{
+								"value": "[#currentUserContact#]",
+								"checkedState": true
+							}
+						],
+						"entitySchemaName": "Contact",
+						"recordsFilter": null
+					},
+					"filterType": "lookup",
+					"_filterOptions": {
+						"expose": [
+							{
+								"attribute": "QuickFilter_8kz64mh_Items",
+								"converters": [
+									{
+										"converter": "crt.QuickFilterAttributeConverter",
+										"args": [
+											{
+												"target": {
+													"viewAttributeName": "Items",
+													"filterColumn": "RZ9Applicant"
+												},
+												"quickFilterType": "lookup"
+											}
+										]
+									}
+								]
+							}
+						],
+						"from": "QuickFilter_8kz64mh_Value"
+					}
+				},
+				"parentName": "LeftFilterContainer",
+				"propertyName": "items",
+				"index": 2
+			},
+			{
+				"operation": "insert",
+				"name": "QuickFilter_12gphvv",
+				"values": {
+					"type": "crt.QuickFilter",
+					"config": {
+						"caption": "#ResourceString(QuickFilter_12gphvv_config_caption)#",
+						"hint": "",
+						"icon": "date",
+						"iconPosition": "left-icon"
+					},
+					"filterType": "date-range",
+					"_filterOptions": {
+						"expose": [
+							{
+								"attribute": "QuickFilter_12gphvv_Items",
+								"converters": [
+									{
+										"converter": "crt.QuickFilterAttributeConverter",
+										"args": [
+											{
+												"target": {
+													"viewAttributeName": "Items",
+													"filterColumn": "CreatedOn"
+												},
+												"quickFilterType": "date-range"
+											}
+										]
+									}
+								]
+							}
+						],
+						"from": "QuickFilter_12gphvv_Value"
+					},
+					"visible": true
+				},
+				"parentName": "LeftFilterContainer",
+				"propertyName": "items",
+				"index": 3
+			},
+			{
+				"operation": "insert",
+				"name": "QuickFilter_w5qel1p",
+				"values": {
+					"type": "crt.QuickFilter",
+					"config": {
+						"caption": "#ResourceString(QuickFilter_w5qel1p_config_caption)#",
+						"hint": "",
+						"defaultValue": false,
+						"approachState": true
+					},
+					"filterType": "custom",
+					"_filterOptions": {
+						"expose": [
+							{
+								"attribute": "QuickFilter_w5qel1p_Items",
+								"converters": [
+									{
+										"converter": "crt.QuickFilterAttributeConverter",
+										"args": [
+											{
+												"target": {
+													"viewAttributeName": "Items",
+													"customFilter": {
+														"items": {
+															"7f320bdf-4d16-47eb-9ff3-b1b0216e6395": {
+																"filterType": 4,
+																"comparisonType": 4,
+																"isEnabled": true,
+																"trimDateTimeParameterToDate": false,
+																"leftExpression": {
+																	"expressionType": 0,
+																	"columnPath": "RZ9Status"
+																},
+																"isAggregative": false,
+																"dataValueType": 10,
+																"referenceSchemaName": "RZ9RequestStatus",
+																"rightExpressions": [
+																	{
+																		"expressionType": 2,
+																		"parameter": {
+																			"dataValueType": 10,
+																			"value": {
+																				"Name": "Completed",
+																				"Id": "6c61ad49-9073-425b-b3fe-5e2055ecaae4",
+																				"value": "6c61ad49-9073-425b-b3fe-5e2055ecaae4",
+																				"displayValue": "Completed"
+																			}
+																		}
+																	},
+																	{
+																		"expressionType": 2,
+																		"parameter": {
+																			"dataValueType": 10,
+																			"value": {
+																				"Name": "Canceled",
+																				"Id": "a582dab7-084f-4a16-a832-446ac0290a2c",
+																				"value": "a582dab7-084f-4a16-a832-446ac0290a2c",
+																				"displayValue": "Canceled"
+																			}
+																		}
+																	}
+																]
+															}
+														},
+														"logicalOperation": 0,
+														"isEnabled": true,
+														"filterType": 6,
+														"rootSchemaName": "RZ9Request"
+													},
+													"dependencyFilters": null
+												},
+												"quickFilterType": "custom",
+												"config": {
+													"caption": "#ResourceString(QuickFilter_w5qel1p_caption)#",
+													"defaultValue": false,
+													"approachState": true
+												}
+											}
+										]
+									}
+								]
+							}
+						],
+						"from": [
+							"QuickFilter_w5qel1p_Value"
+						]
+					}
+				},
+				"parentName": "LeftFilterContainer",
+				"propertyName": "items",
+				"index": 4
+			},
+			{
+				"operation": "insert",
 				"name": "RightFilterContainer",
 				"values": {
 					"layoutConfig": {
@@ -452,6 +632,18 @@ define("RZ9Request_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCH
 							},
 							{
 								"name": "LookupQuickFilterByTag_Items",
+								"loadOnChange": true
+							},
+							{
+								"name": "QuickFilter_8kz64mh_Items",
+								"loadOnChange": true
+							},
+							{
+								"name": "QuickFilter_12gphvv_Items",
+								"loadOnChange": true
+							},
+							{
+								"name": "QuickFilter_w5qel1p_Items",
 								"loadOnChange": true
 							}
 						]
