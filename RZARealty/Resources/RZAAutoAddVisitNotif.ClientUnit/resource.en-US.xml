@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="en-US">
+	<Group Type="String">
+		<Items>
+			<Item Name="Caption" Value="Auto Add Success Notifications" />
+			<Item Name="LocalizableStrings.Label_4k0eelh_caption.Value" Value="Auto Add Visit Run Successfully. Please Refresh Your Visit Grid" />
+			<Item Name="LocalizableStrings.SaveButton_caption.Value" Value="Ok" />
+		</Items>
+	</Group>
+</Resources>

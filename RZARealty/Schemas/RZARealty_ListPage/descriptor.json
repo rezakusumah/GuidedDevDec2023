@@ -1,0 +1,14 @@
+﻿{
+  "Descriptor": {
+    "UId": "3b4a20d8-0ea6-415d-a87b-8ec62d7d806f",
+    "Name": "RZARealty_ListPage",
+    "ModifiedOnUtc": "\/Date(1703731019000)\/",
+    "Parent": {
+      "UId": "3f1f3f38-a0a4-4549-b895-249fb08f554a",
+      "Name": "ListFreedomTemplate"
+    },
+    "ManagerName": "ClientUnitSchemaManager",
+    "Caption": "Realty list page",
+    "DependsOn": []
+  }
+}

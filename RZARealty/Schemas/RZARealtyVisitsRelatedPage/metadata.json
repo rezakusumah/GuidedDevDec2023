@@ -1,0 +1,35 @@
+﻿{
+  "MetaData": {
+    "Schema": {
+      "ManagerName": "AddonSchemaManager",
+      "UId": "217f4c18-c536-41a3-9920-36d9c3485a1f",
+      "A2": "RZARealtyVisitsRelatedPage",
+      "A5": "6896eab2-3cc1-4212-82b4-ca998573c56a",
+      "B1": [],
+      "B2": [],
+      "B3": [],
+      "B6": "19b4b090-d369-43e2-9d07-70239e1a999a",
+      "B8": "8.1.0.6827",
+      "AD1": "3ef75e32-c507-472c-9aee-21450e46c9f8",
+      "AD2": "EntitySchemaManager",
+      "AD3": "RelatedPage",
+      "AD5": "3a2d6f51-1bfc-4c17-aacb-b53de4866b7c",
+      "AD4": {
+  "Pages": [
+    {
+      "UId": "f8695ffd-9a4a-bf8a-2b73-303e105ed4be",
+      "PageSchemaUId": "ea599705-6793-4ba7-b301-5800d023eca3",
+      "IsDefault": true,
+      "IsSspDefault": false,
+      "Actions": {
+        "Add": false
+      },
+      "Role": "a29a3ba5-4b0d-de11-9a51-005056c00008",
+      "TypeColumnValue": null
+    }
+  ],
+  "TypeColumnUId": null
+}
+    }
+  }
+}

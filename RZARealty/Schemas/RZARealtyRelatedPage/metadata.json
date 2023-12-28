@@ -1,0 +1,28 @@
+{
+  "MetaData": {
+    "Schema": {
+      "ManagerName": "AddonSchemaManager",
+      "UId": "09ffd884-12fa-4b58-b3df-eef91bccbffe",
+      "A2": "RZARealtyRelatedPage",
+      "A5": "6f71e54c-1960-40c9-94f6-073fd67699ab",
+      "B1": [],
+      "B2": [],
+      "B3": [],
+      "B6": "5530927f-22ea-e7c9-4ccf-506d3a6c2ed2",
+      "B8": "0.0.0.0",
+      "AD1": "1708ea75-fca7-4cd8-8da0-cf3fd7238900",
+      "AD2": "EntitySchemaManager",
+      "AD3": "RelatedPage",
+      "AD5": "3a2d6f51-1bfc-4c17-aacb-b53de4866b7c",
+      "AD4": {
+        "Pages": [
+          {
+            "UId": "1b665a1c-a6f5-4a33-985f-8df6cf563a7c",
+            "PageSchemaUId": "88b8288f-2e01-43c4-8ff2-68cb568709d5",
+            "IsDefault": true
+          }
+        ]
+      }
+    }
+  }
+}

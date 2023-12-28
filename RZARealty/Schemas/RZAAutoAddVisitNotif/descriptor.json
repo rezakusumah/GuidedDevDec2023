@@ -1,0 +1,13 @@
+﻿{
+  "Descriptor": {
+    "UId": "727151c0-4a54-4f5a-9c5d-bf64b1eb1eb2",
+    "Name": "RZAAutoAddVisitNotif",
+    "ModifiedOnUtc": "\/Date(1703736894000)\/",
+    "Parent": {
+      "UId": "ecdcc8ff-272c-4957-9381-7d74ce17e140",
+      "Name": "BaseMiniPageTemplate"
+    },
+    "ManagerName": "ClientUnitSchemaManager",
+    "Caption": "Auto Add Success Notifications"
+  }
+}

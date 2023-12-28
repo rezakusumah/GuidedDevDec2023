@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "de164338-2ea2-49ae-8962-51381326d4a1",
+    "Name": "RZAProcess_ac47640",
+    "ModifiedOnUtc": "\/Date(1703736912000)\/",
+    "ManagerName": "ProcessSchemaManager",
+    "Caption": "Auto Add Realty Visits",
+    "DependsOn": []
+  }
+}

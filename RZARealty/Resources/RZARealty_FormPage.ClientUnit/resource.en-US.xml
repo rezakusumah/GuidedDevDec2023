@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="en-US">
+	<Group Type="String">
+		<Items>
+			<Item Name="Caption" Value="Realty form page" />
+			<Item Name="LocalizableStrings.addRecord_jocwark_caption.Value" Value="Add new" />
+			<Item Name="LocalizableStrings.addRecord_num3sul_caption.Value" Value="Add new" />
+			<Item Name="LocalizableStrings.AreaCannotBeLess.Value" Value="Area Must Greater than 0" />
+			<Item Name="LocalizableStrings.Button_dq5cpio_caption.Value" Value="Auto Add Visit" />
+			<Item Name="LocalizableStrings.ButtonAutoAddVisit_caption.Value" Value="Auto Add Visit" />
+			<Item Name="LocalizableStrings.ExpansionPanel_59gseq5_title.Value" Value="Realty Visits" />
+			<Item Name="LocalizableStrings.GridDetailAddBtn_u6faxwk_caption.Value" Value="New" />
+			<Item Name="LocalizableStrings.GridDetailExportDataBtn_8x59kcz_caption.Value" Value="Export to Excel" />
+			<Item Name="LocalizableStrings.GridDetailImportDataBtn_28l0u8w_caption.Value" Value="Data import" />
+			<Item Name="LocalizableStrings.GridDetailRefreshBtn_aa4xo56_caption.Value" Value="Refresh" />
+			<Item Name="LocalizableStrings.GridDetailSearchFilter_13wd4dt_placeholder.Value" Value="Search" />
+			<Item Name="LocalizableStrings.GridDetailSettingsBtn_de0dgdr_caption.Value" Value="Actions" />
+			<Item Name="LocalizableStrings.PriceCannotBeLess.Value" Value="Price Must Greater than 0" />
+			<Item Name="Parameters.1a9f6b87-c0ab-247a-a134-c705b6b523b6.Caption" Value="Number 1" />
+		</Items>
+	</Group>
+</Resources>

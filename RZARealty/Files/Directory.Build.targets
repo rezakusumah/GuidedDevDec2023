@@ -1,0 +1,19 @@
+<Project>
+	<ItemGroup Condition="'$(PkgPath)' != ''">
+		<Compile Remove="$(PkgPath)/RZARealty/Assemblies/**" />
+		<Compile Remove="$(PkgPath)/RZARealty/Data/**" />
+		<Compile Remove="$(PkgPath)/RZARealty/SqlScripts/**" />
+		<Compile Remove="$(PkgPath)/RZARealty/Schemas\**" />
+		<Compile Remove="$(PkgPath)/RZARealty/Resources/**" />
+		<EmbeddedResource Remove="$(PkgPath)/RZARealty/Assemblies/**" />
+		<EmbeddedResource Remove="$(PkgPath)/RZARealty/Data/**" />
+		<EmbeddedResource Remove="$(PkgPath)/RZARealty/SqlScripts/**" />
+		<EmbeddedResource Remove="$(PkgPath)/RZARealty/Schemas/**" />
+		<EmbeddedResource Remove="$(PkgPath)/RZARealty/Resources/**" />
+		<None Remove="$(PkgPath)/RZARealty/Assemblies/**" />
+		<None Remove="$(PkgPath)/RZARealty/Data/**" />
+		<None Remove="$(PkgPath)/RZARealty/SqlScripts/**" />
+		<None Remove="$(PkgPath)/RZARealty/Schemas/**" />
+		<None Remove="$(PkgPath)/RZARealty/Resources/**" />
+  </ItemGroup>
+</Project>
